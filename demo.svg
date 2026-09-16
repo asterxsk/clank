@@ -1,70 +1,55 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
   <rect width="800" height="450" rx="16" fill="#0b1220"/>
-  <!-- terminal -->
-  <g>
-    <rect x="40" y="36" width="720" height="170" rx="12" fill="#020617" stroke="#1e293b" stroke-width="1.5"/>
-    <circle cx="62" cy="56" r="5" fill="#f87171"/>
-    <circle cx="80" cy="56" r="5" fill="#fbbf24"/>
-    <circle cx="98" cy="56" r="5" fill="#34d399"/>
-    <text x="60" y="92" fill="#4ade80" font-size="14" font-family="ui-monospace,Consolas,monospace" opacity="0">$ python3 clank.py apps
-      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.04;0.08;0.90;0.96"/>
-    </text>
-    <text x="60" y="116" fill="#e2e8f0" font-size="14" font-family="ui-monospace,Consolas,monospace" opacity="0">elements=12 · pid 11312 ready
-      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.10;0.14;0.90;0.96"/>
-    </text>
-    <text x="60" y="140" fill="#4ade80" font-size="14" font-family="ui-monospace,Consolas,monospace" opacity="0">$ python3 clank.py pill --text working
-      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.16;0.20;0.90;0.96"/>
-    </text>
-    <text x="60" y="164" fill="#93c5fd" font-size="14" font-family="ui-monospace,Consolas,monospace" opacity="0">pill sent · overlay awake · busy on
-      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.22;0.26;0.90;0.96"/>
-    </text>
-    <rect x="60" y="176" width="9" height="16" fill="#4ade80" opacity="0">
-      <animate attributeName="opacity" dur="1s" repeatCount="indefinite" values="1;1;0;0" keyTimes="0;0.45;0.5;1"/>
+  <!-- browser shell -->
+  <rect x="150" y="80" width="500" height="290" rx="12" fill="#f1f5f9"/>
+  <rect x="150" y="80" width="500" height="36" rx="12" fill="#cbd5e1"/>
+  <rect x="170" y="88" width="300" height="20" rx="10" fill="#f8fafc"/>
+  <!-- loading skeletons (shimmer) -->
+  <g fill="#cbd5e1">
+    <rect x="170" y="140" width="220" height="16" rx="8" opacity="0.6">
+      <animate attributeName="opacity" dur="1.6s" repeatCount="indefinite" values="0.3;0.9;0.3"/>
+    </rect>
+    <rect x="170" y="164" width="340" height="12" rx="6" opacity="0.6">
+      <animate attributeName="opacity" dur="1.6s" begin="0.2s" repeatCount="indefinite" values="0.3;0.9;0.3"/>
+    </rect>
+    <rect x="170" y="182" width="280" height="12" rx="6" opacity="0.6">
+      <animate attributeName="opacity" dur="1.6s" begin="0.4s" repeatCount="indefinite" values="0.3;0.9;0.3"/>
+    </rect>
+    <rect x="170" y="216" width="150" height="90" rx="8" opacity="0.6">
+      <animate attributeName="opacity" dur="1.6s" begin="0.1s" repeatCount="indefinite" values="0.3;0.9;0.3"/>
+    </rect>
+    <rect x="330" y="216" width="150" height="90" rx="8" opacity="0.6">
+      <animate attributeName="opacity" dur="1.6s" begin="0.5s" repeatCount="indefinite" values="0.3;0.9;0.3"/>
     </rect>
   </g>
-  <!-- browser -->
-  <g opacity="0">
-    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.30;0.35;0.85;0.90;1"/>
-    <rect x="120" y="226" width="560" height="184" rx="12" fill="#f1f5f9" stroke="#334155" stroke-width="1.5"/>
-    <rect x="120" y="226" width="560" height="34" rx="12" fill="#cbd5e1"/>
-    <rect x="140" y="234" width="380" height="18" rx="9" fill="#f8fafc"/>
-    <text x="152" y="248" fill="#64748b" font-size="12" font-family="ui-monospace,Consolas,monospace">browser — app window · pid 11312</text>
-    <rect x="140" y="276" width="200" height="22" rx="6" fill="#ffffff" stroke="#94a3b8"/>
-    <text x="152" y="292" fill="#334155" font-size="13" font-family="Verdana,sans-serif">Repo</text>
-    <rect x="360" y="276" width="200" height="22" rx="6" fill="#ffffff" stroke="#94a3b8"/>
-    <text x="372" y="292" fill="#334155" font-size="13" font-family="Verdana,sans-serif">Search</text>
-    <rect x="140" y="312" width="150" height="60" rx="8" fill="#ffffff" stroke="#94a3b8"/>
-    <rect x="310" y="312" width="150" height="60" rx="8" fill="#ffffff" stroke="#94a3b8"/>
-    <rect x="480" y="312" width="140" height="60" rx="8" fill="#2563eb"/>
-    <text x="550" y="347" fill="#ffffff" font-size="14" text-anchor="middle" font-family="Verdana,sans-serif">Open</text>
-  </g>
-  <!-- click ripples: 12→80px diameter, 600ms fade -->
+  <rect x="490" y="300" width="140" height="40" rx="8" fill="#2563eb"/>
+  <!-- click ripples: 12→80px diameter -->
   <g fill="none" stroke="#2563eb" stroke-width="3">
-    <circle cx="280" cy="320" r="6" opacity="0">
-      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;0;0" keyTimes="0;0.40;0.42;0.50;1"/>
-      <animate attributeName="r" dur="12s" repeatCount="indefinite" values="6;6;6;40;40" keyTimes="0;0.40;0.42;0.50;1"/>
+    <circle cx="245" cy="261" r="6" opacity="0">
+      <animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;0;0" keyTimes="0;0.28;0.30;0.38;1"/>
+      <animate attributeName="r" dur="8s" repeatCount="indefinite" values="6;6;6;40;40" keyTimes="0;0.28;0.30;0.38;1"/>
     </circle>
-    <circle cx="420" cy="330" r="6" opacity="0">
-      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;0;0" keyTimes="0;0.52;0.54;0.62;1"/>
-      <animate attributeName="r" dur="12s" repeatCount="indefinite" values="6;6;6;40;40" keyTimes="0;0.52;0.54;0.62;1"/>
+    <circle cx="405" cy="261" r="6" opacity="0">
+      <animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;0;0" keyTimes="0;0.50;0.52;0.60;1"/>
+      <animate attributeName="r" dur="8s" repeatCount="indefinite" values="6;6;6;40;40" keyTimes="0;0.50;0.52;0.60;1"/>
     </circle>
-    <circle cx="540" cy="310" r="6" opacity="0">
-      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;0;0" keyTimes="0;0.65;0.67;0.75;1"/>
-      <animate attributeName="r" dur="12s" repeatCount="indefinite" values="6;6;6;40;40" keyTimes="0;0.65;0.67;0.75;1"/>
+    <circle cx="560" cy="320" r="6" opacity="0">
+      <animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;0;0" keyTimes="0;0.70;0.72;0.80;1"/>
+      <animate attributeName="r" dur="8s" repeatCount="indefinite" values="6;6;6;40;40" keyTimes="0;0.70;0.72;0.80;1"/>
     </circle>
   </g>
   <!-- blue cursor + pill, glides between clicks -->
   <g opacity="0">
-    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.22;0.27;0.88;0.93;1"/>
-    <animateTransform attributeName="transform" type="translate" dur="12s" repeatCount="indefinite" values="60 60;60 60;380 220;280 320;420 330;540 310;540 310;60 60;60 60" keyTimes="0;0.25;0.33;0.42;0.54;0.67;0.83;0.92;1"/>
+    <animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.03;0.08;0.88;0.93;1"/>
+    <animateTransform attributeName="transform" type="translate" dur="8s" repeatCount="indefinite" values="200 150;200 150;245 261;405 261;560 320;560 320;200 150" keyTimes="0;0.15;0.30;0.52;0.72;0.88;1"/>
     <g>
-      <animateTransform attributeName="transform" type="rotate" dur="12s" repeatCount="indefinite" values="0 3 2;0 3 2;0 3 2;18 3 2;18 3 2;18 3 2;0 3 2;0 3 2;0 3 2" keyTimes="0;0.25;0.33;0.42;0.54;0.67;0.83;0.92;1"/>
+      <animateTransform attributeName="transform" type="rotate" dur="8s" repeatCount="indefinite" values="0 3 2;0 3 2;18 3 2;0 3 2;0 3 2;18 3 2;0 3 2;0 3 2;18 3 2;0 3 2;0 3 2" keyTimes="0;0.28;0.32;0.36;0.48;0.52;0.56;0.68;0.72;0.76;1"/>
       <polygon points="3,2 3,23 22,12" fill="#2563eb" stroke="#2563eb" stroke-width="2" stroke-linejoin="round"/>
     </g>
-    <g opacity="0">
-      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.30;0.35;0.85;0.90;1"/>
-      <rect x="26" y="28" width="132" height="28" rx="14" fill="#2563eb"/>
-      <text x="92" y="47" fill="#ffffff" font-size="13" text-anchor="middle" font-family="Verdana,sans-serif">opening repo…</text>
+    <g>
+      <rect x="28" y="30" width="120" height="28" rx="14" fill="#0f172a" opacity="0.9"/>
+      <rect x="26" y="28" width="120" height="28" rx="14" fill="#2563eb"/>
+      <text x="86" y="47" fill="#ffffff" font-size="13" text-anchor="middle" font-family="Verdana,sans-serif">opening…</text>
     </g>
   </g>
 </svg>
