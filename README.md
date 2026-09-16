@@ -1,5 +1,7 @@
 # clank
 
+[![skills.sh](https://skills.sh/b/asterxsk/clank)](https://skills.sh/asterxsk/clank)
+
 Computer use with inbuilt messages. Drive the desktop via the clank CLI (any harness, Windows/macOS/Linux). Background control plus sharp blue cursor, click tilt + ripple, typewriter reveal, and message pill with agent-chosen duration.
 
 ## Layout
@@ -10,6 +12,10 @@ Computer use with inbuilt messages. Drive the desktop via the clank CLI (any har
 - `kill_overlay.py` — kill stray overlay processes (Windows + macOS + Linux)
 
 ## Quick start
+
+```sh
+npx skills add asterxsk/clank
+```
 
 ```sh
 cua-driver --version          # install first if this fails, see SKILL.md
