@@ -4,6 +4,8 @@
 
 Computer use with inbuilt messages. Drive the desktop via the clank CLI (any harness, Windows/macOS/Linux). Background control plus sharp blue cursor, click tilt + ripple, typewriter reveal, and message pill with agent-chosen duration.
 
+![clank demo](demo.svg)
+
 ## Layout
 
 - `SKILL.md` — the skill: setup, actions, rules, overlay reference
